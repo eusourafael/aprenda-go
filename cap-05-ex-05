@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := `Hello
+				playground
+			e aí?!?!`
+	fmt.Println(x)
+}
+
+/*
+- Crie uma variável de tipo string utilizando uma raw string literal.
+- Demonstre-a.
+*/
