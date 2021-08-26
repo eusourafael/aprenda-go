@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println(10 == 20)
+	fmt.Println(10 != 20)
+	fmt.Println(10 >= 20)
+	fmt.Println(10 > 20)
+	fmt.Println(10 <= 20)
+	fmt.Println(10 < 20)
+}
+
+/*
+- Escreva expressões utilizando os operadores, e atribua seus valores a variáveis.
+
+*/
