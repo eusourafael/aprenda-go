@@ -1,0 +1,14 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 5
+	if x == 5 {
+		fmt.Println("x é igual a 5")
+	}
+}
+
+// - Crie um programa que demonstre o funcionamento da declaração if.
