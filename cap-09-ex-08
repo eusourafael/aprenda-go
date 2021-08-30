@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	pessoas := map[string][]string{
+		"dasilva_joao":   []string{"futebol", "volei"},
+		"marinho_daniel": []string{"brincar na areia", "ajudar bebês"},
+	}
+	for nome, hobbies := range pessoas {
+		for indice, hobby := range hobbies {
+			fmt.Println(nome, indice, hobby)
+		}
+	}
+}
+
+/*
+- Crie um map com key tipo string e value tipo []string.
+    - Key deve conter nomes no formato sobrenome_nome
+    - Value deve conter os hobbies favoritos da pessoa
+- Demonstre todos esses valores e seus índices.
+*/
