@@ -1,0 +1,33 @@
+package main
+
+import (
+	"fmt"
+)
+
+
+
+func main() {
+
+
+	var meu_array [5]int
+	meu_array[0] = 1
+	meu_array[1] = 2
+	meu_array[2] = 3
+	meu_array[3] = 4
+	meu_array[4] = 5
+
+	for indice, valor := range meu_array {
+		fmt.Println(indice, valor)
+	}
+	
+	fmt.Printf("%T", meu_array)
+
+}
+
+/*
+- Usando uma literal composta:
+     - Crie um array que suporte 5 valores to tipo int
+     - Atribua valores aos seus índices
+- Utilize range e demonstre os valores do array.
+- Utilizando format printing, demonstre o tipo do array.
+*/
