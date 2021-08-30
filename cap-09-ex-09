@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	pessoas := map[string][]string{
+		"dasilva_joao":   []string{"futebol", "volei"},
+		"marinho_daniel": []string{"brincar na areia", "ajudar bebês"},
+	}
+	pessoas["nepomuceno_gabriel"] = []string{"mamar", "dormir"}
+	for nome, hobbies := range pessoas {
+		for indice, hobby := range hobbies {
+			fmt.Println(nome, indice, hobby)
+		}
+	}
+}
+
+/*
+- Utilizando o exercício anterior, adicione uma entrada ao map e demonstre o map inteiro utilizando range.
+*/
