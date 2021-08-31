@@ -1,0 +1,41 @@
+package main
+
+import (
+	"fmt"
+)
+
+type pessoa struct {
+	nome               string
+	sobrenome          string
+	sorvetes_favoritos []string
+}
+
+func main() {
+	pessoa1 := pessoa{
+		nome:               "João",
+		sobrenome:          "da Silva",
+		sorvetes_favoritos: []string{"chocolate", "morango"},
+	}
+	pessoa2 := pessoa{
+		nome:               "Chico",
+		sobrenome:          "Müller",
+		sorvetes_favoritos: []string{"cookies", "raspberry", "pistache"},
+	}
+
+	pessoas := []pessoa{pessoa1, pessoa2}
+
+	for _, pessoa := range pessoas {
+		fmt.Println(pessoa.nome, pessoa.sobrenome)
+		for _, sorvete := range pessoa.sorvetes_favoritos {
+			fmt.Printf("\t sorvete: %v\n", sorvete)
+		}
+	}
+}
+
+/*
+- Crie um tipo "pessoa" com tipo subjacente struct, que possa conter os seguintes campos:
+    - Nome
+    - Sobrenome
+    - Sabores favoritos de sorvete
+- Crie dois valores do tipo "pessoa" e demonstre estes valores, utilizando range na slice que contem os sabores de sorvete.
+*/
