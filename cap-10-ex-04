@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	struct_anonimo := struct {
+		nome      string
+		sobrenome string
+		idade     int
+		telefones map[string]string
+		hobbies   []string
+	}{
+		nome:      "chico",
+		sobrenome: "müller",
+		idade:     27,
+		telefones: map[string]string{
+			"comercial": "123456",
+			"casa":      "78910",
+		},
+		hobbies: []string{"praia", "comer"},
+	}
+	fmt.Println(struct_anonimo)
+}
+
+/*
+- Crie e use um struct anônimo.
+- Desafio: dentro do struct tenha um valor de tipo map e outro do tipo slice.
+*/
