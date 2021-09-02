@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	incrementa_a := contador()
+	fmt.Println(incrementa_a())
+	fmt.Println(incrementa_a())
+	fmt.Println(incrementa_a())
+
+	incrementa_b := contador()
+	fmt.Println(incrementa_b())
+	fmt.Println(incrementa_b())
+	fmt.Println(incrementa_b())
+}
+
+func contador() func() int {
+	contador := 0
+	return func() int {
+		contador++
+		return contador
+	}
+}
+
+/*
+- Demonstre o funcionamento de um closure.
+- Ou seja: crie uma função que retorna outra função, onde esta outra função faz uso de uma variável alem de seu scope.
+*/
