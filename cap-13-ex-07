@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	duplica := func(numero int) int {
+		return 2 * numero
+	}
+	fmt.Println(duplica(3))
+}
+
+/*
+- Atribua uma função a uma variável.
+- Chame essa função.
+*/
