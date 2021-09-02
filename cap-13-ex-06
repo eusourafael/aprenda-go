@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	dobro_de_3 := func(numero int) int {
+		return 2 * numero
+	}(3)
+	fmt.Println(dobro_de_3)
+}
+
+/*
+- Crie e utilize uma função anônima.
+
+*/
