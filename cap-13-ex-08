@@ -1,0 +1,26 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	multiplica := func(numero int) func(int) int {
+		return func(numero2 int) int {
+			return numero * numero2
+		}
+	}
+
+	multiplica_por_2 := multiplica(2)
+
+	dois_x_tres := multiplica_por_2(3)
+
+	fmt.Println(dois_x_tres)
+}
+
+/*
+- Crie uma função que retorna uma função.
+- Atribua a função retornada a uma variável.
+- Chame a função retornada.
+*/
