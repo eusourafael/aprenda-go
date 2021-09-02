@@ -1,0 +1,26 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	multiplica := func(numeros ...int) int {
+		total := 1
+		for _, numero := range numeros {
+			total *= numero
+		}
+		return total
+	}
+
+	calculadora := func(operacao func(...int) int, numeros ...int) int {
+		return operacao(numeros...)
+	}
+
+	fmt.Println(calculadora(multiplica, []int{1, 2, 3}...))
+}
+
+/*
+- Callback: passe uma função como argumento a outra função.
+*/
