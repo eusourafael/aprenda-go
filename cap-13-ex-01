@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	meu_int := retorna_int()
+	meu_outro_int, minha_string := retorna_string_e_int()
+
+	fmt.Println(meu_int, meu_outro_int, minha_string)
+}
+
+func retorna_int() int {
+	return 2
+}
+
+func retorna_string_e_int() (int, string) {
+	return 3, "oi"
+}
+
+/*
+   - Crie uma função que retorne um int
+   - Crie outra função que retorne um int e uma string
+   - Chame as duas funções
+   - Demonstre seus resultados
+*/
