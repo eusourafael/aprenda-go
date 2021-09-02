@@ -1,0 +1,37 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	numeros := []int{1, 2, 3, 4}
+	fmt.Println(soma_variadico(numeros...))
+	fmt.Println(soma_slice(numeros))
+
+}
+
+func soma_variadico(numeros ...int) int {
+	total := 0
+	for _, numero := range numeros {
+		total += numero
+	}
+	return total
+
+}
+
+func soma_slice(numeros []int) int {
+	total := 0
+	for _, numero := range numeros {
+		total += numero
+	}
+	return total
+
+}
+
+/*
+- Crie uma função que receba um parâmetro variádico do tipo int e retorne a soma de todos os ints recebidos;
+- Passe um valor do tipo slice of int como argumento para a função;
+- Crie outra função, esta deve receber um valor do tipo slice of int e retornar a soma de todos os elementos da slice;
+- Passe um valor do tipo slice of int como argumento para a função.
+*/
